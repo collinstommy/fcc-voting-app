@@ -47,7 +47,6 @@ describe('Polls', () => {
             testPoll.save((err, testPoll) => {
                 chai.request(server)
                     .get('/polls/user/' + testUserName)
-                    .auth('tomascollins@gmail.com', 'test')
                     .send(testPoll)
                     .end((err, res) => {
                         res.should.have.status(200);

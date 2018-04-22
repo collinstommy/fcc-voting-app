@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const PollSchema = new Schema(
   {
     title: { type: String, required: true },
-    userEmail: { type: String, required: true},
+    userId: { type: String, required: false},
     pollOptions: [
     {
           option: { 

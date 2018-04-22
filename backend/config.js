@@ -1,19 +1,19 @@
 var config = {
 development: {
-    mongo_uri : 'mongodb://localhost/test',
+    mongo_uri : 'mongodb://localhost/vote',
     //server details
     server: {
         host: '127.0.0.1',
-        port: '8080'
+        port: '5000'
     },
     secret : 'iminadevenv'
 },
 test: {
-    mongo_uri : 'mongodb://localhost/test',
+    mongo_uri : 'mongodb://localhost/vote',
     //server details
     server: {
         host: '127.0.0.1',
-        port: '8080'
+        port: '5000'
     },
     secret : 'iminadevenv'
 },
